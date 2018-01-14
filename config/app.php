@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'Image Crypt',
 
     /*
     |--------------------------------------------------------------------------
@@ -178,6 +178,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Impl\Repo\RepoServiceProvider::class,
+		App\Impl\Service\Form\FormServiceProvider::class,
+		App\Impl\Service\Notification\NotificationServiceProvider::class
+		//App\Impl\Exception\ExceptionServiceProvider::class
 
     ],
 
